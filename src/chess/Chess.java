@@ -5,8 +5,11 @@ public class Chess {
 	int y; // current position
 	String color;
 	
-	public Chess(String color){
+	public Chess(String color, int x, int y){
 		this.color = color;
+		this.x = x;
+		this.y = y;
+//		setPosition();
 	}
 	
 	public void getPosition(){
