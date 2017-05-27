@@ -3,20 +3,20 @@ package chessBoard;
 import chess.*;
 
 public class ChessBoard {
-	int x;
-	int y;
+	int x = 8;
+	int y = 8;
 	Chess[] [] board = new Chess[x][y];
 	
 	/*    8  X  8
 	 *   (0,0) (0,1)
-	 *   rook  knight bishop king   queen bishop knight rook
-	 *   pawn  pawn    pawn  pawn  pawn   pawn    pawn   pawn   white
-	 *   (2,0)
+	 *   rook  knight bishop king  queen  bishop  knight rook
+	 *   pawn  pawn    pawn  pawn  pawn   pawn    pawn   pawn     <white
+	 *   (1,0)
 	 * 
 	 * 
 	 *   (6,0) (6,1)
-	 *   pawn  pawn    pawn  pawn  pawn   pawn    pawn  pawn     black
-	 *   rook  knight bishop king  queen  bishop knight rook
+	 *   pawn  pawn    pawn  pawn  pawn   pawn    pawn   pawn     <black
+	 *   rook  knight bishop king  queen  bishop  knight rook
 	 *   (7,0)  (7,1)
 	 */
 	
@@ -25,8 +25,8 @@ public class ChessBoard {
 	}
 	
 	public void initialize(){
-		x = 7;
-		y = 7;
+		//x = 8;
+		//y = 8;
 		Chess bRook1 = new Rook("black", 7, 0);
 		Chess bKnight1 = new Knight("black", 7, 1);
 		Chess bBishop1 = new Bishop("black", 7, 2);
@@ -93,5 +93,17 @@ public class ChessBoard {
 		board[1][5] = wPawn6;
 		board[1][6] = wPawn7;
 		board[1][7] = wPawn8;
+	}
+	public void getInfo(){
+		for(int i = 0; i <= 7; i++){
+			
+			for(int j = 0; j <= 7; j++){
+				if(board[i][j] == null)
+					System.out.print("X");
+				else
+					System.out.print("O");
+			}
+			System.out.println();
+		}
 	}
 }
