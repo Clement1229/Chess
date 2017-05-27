@@ -5,6 +5,7 @@ public class King extends Chess {
 	public King(String color, int x, int y) {
 		super(color, x, y);
 		// TODO Auto-generated constructor stub
+		init = "K";
 	}
 
     public Boolean isLegalMove(int x1, int y1){

@@ -3,6 +3,7 @@ package chess;
 public class Chess {
 	int x; 
 	int y; // current position
+	String init; // chess initial
 	String color;
 	
 	public Chess(String color, int x, int y){
