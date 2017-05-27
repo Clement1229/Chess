@@ -11,7 +11,7 @@ public class ChessBoard {
 	 *   (0,0) (0,1)
 	 *   rook  knight bishop king   queen bishop knight rook
 	 *   pawn  pawn    pawn  pawn  pawn   pawn    pawn   pawn   white
-	 * 
+	 *   (2,0)
 	 * 
 	 * 
 	 *   (6,0) (6,1)

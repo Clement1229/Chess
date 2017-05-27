@@ -12,17 +12,23 @@ public class Chess {
 //		setPosition();
 	}
 	
-	public void getPosition(){
+	public String getPosition(){
+		return x + ", " + y;
+	}
+	
+	public void move(int x1, int y1){
+		if(isLegalMove(x1, y1) == true){
+			
+		}
+		
 		
 	}
 	
-	public void move(){
-		
-		
-		
+	public Boolean hasEnemy(){
+		return true;
 	}
 	
-	public Boolean isLegalMove(){
+	public Boolean isLegalMove(int x1, int y1){
 		
 		
 		return true;

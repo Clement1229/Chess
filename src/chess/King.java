@@ -7,4 +7,11 @@ public class King extends Chess {
 		// TODO Auto-generated constructor stub
 	}
 
+    public Boolean isLegalMove(int x1, int y1){
+		if(x1-x >= 2 || y1-y >= 2){
+			return false;
+		}
+		
+		return true;
+	}
 }
